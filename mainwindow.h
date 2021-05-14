@@ -20,6 +20,7 @@ public:
     ~MainWindow();
 
 protected:
+    virtual void keyPressEvent(QKeyEvent *ev) override;
     virtual void resizeEvent(QResizeEvent *event) override;
 
 private:

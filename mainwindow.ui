@@ -45,7 +45,6 @@
    <addaction name="menuView"/>
    <addaction name="menuhelp"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -57,9 +56,13 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actOpen"/>
+   <addaction name="separator"/>
    <addaction name="actPrevious"/>
    <addaction name="actNext"/>
+   <addaction name="separator"/>
+   <addaction name="actExplain"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="actOpen">
    <property name="icon">
     <iconset resource="Icon.qrc">
@@ -107,6 +110,18 @@
    </property>
    <property name="shortcut">
     <string>Space</string>
+   </property>
+  </action>
+  <action name="actExplain">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/tool-icon/tool-Icon/explain.png</normaloff>:/tool-icon/tool-Icon/explain.png</iconset>
+   </property>
+   <property name="text">
+    <string>解释</string>
+   </property>
+   <property name="toolTip">
+    <string>解释</string>
    </property>
   </action>
  </widget>

@@ -1,0 +1,31 @@
+/* 菜单栏样式 */
+QMenu {
+    background-color: white; /* sets background of the menu 设置整个菜单区域的背景色，我用的是白色：white*/
+    border: 1px solid gray; /*整个菜单区域的边框粗细、样式、颜色*/
+}
+
+QMenu::item {
+    background-color: transparent;
+    padding:8px 32px;   /*设置菜单项文字上下和左右的内边距，效果就是菜单中的条目左右上下有了间隔*/
+    margin:0px 8px;     /*设置菜单项的外边距*/
+    border-bottom:1px solid #DBDBDB;/*为菜单项之间添加横线间隔*/
+}
+
+/* 工具栏样式 */
+QToolBar {
+    background-color: white; 
+    border-top: 1px solid #eec500;
+}
+
+/* 设置StackedWidget样式 */
+QStackedWidget {
+    background-image:url(":/Images/background-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+/* 状态栏样式 */
+QStatusBar {
+    background-color: #eec500;
+}
