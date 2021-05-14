@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/tool-icon">
+        <file>tool-Icon/file.png</file>
+        <file>tool-Icon/file-selected.png</file>
+        <file>tool-Icon/left.png</file>
+        <file>tool-Icon/left-selected.png</file>
+        <file>tool-Icon/right.png</file>
+        <file>tool-Icon/right-selected.png</file>
+    </qresource>
+</RCC>

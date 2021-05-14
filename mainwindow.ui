@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>316</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>437</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuhelp">
+    <property name="title">
+     <string>help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuhelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actOpen"/>
+   <addaction name="actPrevious"/>
+   <addaction name="actNext"/>
+  </widget>
+  <action name="actOpen">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/tool-icon/tool-Icon/file.png</normaloff>
+     <normalon>:/tool-icon/tool-Icon/file-selected.png</normalon>
+     <selectedoff>:/tool-icon/tool-Icon/file.png</selectedoff>
+     <selectedon>:/tool-icon/tool-Icon/file-selected.png</selectedon>:/tool-icon/tool-Icon/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actPrevious">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/tool-icon/tool-Icon/left.png</normaloff>
+     <selectedoff>:/tool-icon/tool-Icon/left.png</selectedoff>
+     <selectedon>:/tool-icon/tool-Icon/left-selected.png</selectedon>:/tool-icon/tool-Icon/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一个</string>
+   </property>
+   <property name="toolTip">
+    <string>上一张图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Backspace</string>
+   </property>
+  </action>
+  <action name="actNext">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/tool-icon/tool-Icon/right.png</normaloff>
+     <selectedoff>:/tool-icon/tool-Icon/right.png</selectedoff>
+     <selectedon>:/tool-icon/tool-Icon/right-selected.png</selectedon>:/tool-icon/tool-Icon/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一个</string>
+   </property>
+   <property name="toolTip">
+    <string>下一张图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
